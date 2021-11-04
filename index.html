@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    
+    <h1 
+      class="text-center uppercase font-bold mt-10 text-3xl"
+    >
+      Start your webcam
+    </h1>
+
+    <div class="flex items-center justify-center mt-10">
+      <div class="border border-gray-400 mr-8">
+        <h3 class="text-center uppercase font-bold">
+          Local
+        </h3>
+        <video 
+          id="webcamVideo"
+          muted
+          autoplay
+          playsinline
+        ></video>
+      </div>
+      <div class="border border-gray-400">
+        <h3 class="text-center uppercase font-bold">
+          Remote
+        </h3>
+        <video 
+          id="remoteVideo"
+          autoplay
+          playsinline
+        ></video>
+      </div>
+    </div>
+
+    <div
+      class="text-center mt-10"
+    >
+      <button 
+        id="webcamButton"
+        class="bg-green-700 px-2 py-3 rounded text-gray-100 hover:bg-green-600 transition"
+      >
+        Start webcam
+      </button>
+
+      <button
+        id = "callButton"
+        class="bg-red-700 px-6 py-3 rounded text-gray-100 hover:bg-red-600 transition"
+      >
+        Call
+      </button>
+
+      <h2 class="text uppercase font-bold mt-8">
+        Join Call
+      </h2>
+
+      <input 
+        type="text"
+        id="callInput"
+        class="border border-gray-400 rounded"
+      >
+
+      <div class="mt-10">
+        <button
+          id = "answerButton"
+          class="bg-red-700 px-6 py-3 rounded text-gray-100 hover:bg-red-600 transition"
+        >
+          Answer
+        </button>
+        <button
+          id = "hangupButton"
+          class="bg-green-700 px-2 py-3 rounded text-gray-100 hover:bg-green-600 transition"
+        >
+          Hangup
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
