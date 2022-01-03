@@ -29,12 +29,12 @@ let remoteStream = null
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBJV-mTRG5yjG0oMUTmXxXAqpFCcgV55Z4",
-  authDomain: "webrct-f13ed.firebaseapp.com",
-  projectId: "webrct-f13ed",
-  storageBucket: "webrct-f13ed.appspot.com",
-  messagingSenderId: "635814499128",
-  appId: "1:635814499128:web:d60e27ff0e282e9d7aa7cd"
+  apiKey: "AIzaSyBJV",
+  authDomain: "webrc",
+  projectId: "webrct",
+  storageBucket: "webrct",
+  messagingSenderId: "13123",
+  appId: "1:63"
 };
 
 // Initialize Firebase
